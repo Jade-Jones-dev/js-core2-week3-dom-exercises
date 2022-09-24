@@ -99,6 +99,10 @@ function addText(){
 }
 
 
+// how to choose where the node exists
+function insertAfter(newNode, existingNode){
+    existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling)
+}
 
 /*
 Task 5
