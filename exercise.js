@@ -16,6 +16,11 @@ Write JavaScript below that logs:
 
 */
 
+// console.log(document.querySelectorAll(".p"))
+// console.log(document.querySelector(".site-header"))
+// console.log(document.querySelector("#jumbotron-text"))
+// console.log(document.QuerySelectorAll(".primary-content p"))
+
 
 /*
 Task 2
