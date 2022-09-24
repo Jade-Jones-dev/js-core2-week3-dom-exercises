@@ -83,6 +83,20 @@ function addText (){
 
 addTextButton.addEventListener('click', addText);
 
+//class solution below
+
+var addTextBtn = document.querySelector(#addTextBtn);
+
+addTextBtn.addEventListener('click', addText);
+function addText(){
+    //step 1
+    var p =document.createElement('p');
+    p.className = 'red'; // compared to <p class ="red">...</>
+    //step 2
+    p.innerText = 'Read More';
+    // step 3
+    buttonDiv.appendChild(p)
+}
 
 
 
