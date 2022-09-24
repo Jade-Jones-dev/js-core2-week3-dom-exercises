@@ -36,14 +36,53 @@ Task 3
 
 Write JavaScript below that changes the background colour of the page when the 'Change colour' button is clicked.
 */
+/*
+let button = document.querySelector("#alertBtn");
 
+function alertText() {
+	alert("Thanks for visiting Bikes for Refugees!");
+}
 
+button.addEventListener("click", alertText);
+// function changeBgColour() {
+//   return (document.querySelector("body").style.backgroundColor = "Grey");
+// }
+changeColourButton.addEventListener("click", () => {
+	return (document.querySelector("body").style.backgroundColor = "Grey");
+});
+
+// class solution
+
+function changeColor() {
+	if (document.body.style.backgroundColor === "red") {
+		document.body.style.backgroundColor = "white";
+	} else {
+		document.body.style.backgroundColor = "red";
+	}
+}
+
+var colorBtn = document.querySelector("#bgrChangeBtn");
+colorBtn.addEventListener("click", changeColor);
 /*
 Task 4
 ======
 
 When a user clicks the 'Add some text' button, a new paragraph should be added below the buttons that says "Read more below."
 */
+
+let paragraph = document.createElement("p");
+paragraph.innerText = "Read more below";
+
+let placeToInsert = document.querySelector("#jumbotron-text");
+
+let addTextButton = document.querySelector("#addTextBtn");
+
+function addText (){
+    placeToInsert.appendChild(paragraph);
+}
+
+addTextButton.addEventListener('click', addText);
+
 
 
 
@@ -52,4 +91,17 @@ Task 5
 ======
 
 When the 'Larger links!' button is clicked, the text of all links on the page should increase.
+
+
+//steps to add an element
+//create teh element
+let paragraph = document.createElement("p");
+paragraph.innerText = "This is a paragraph";
+
+// locate the place to insert it
+
+let placeToInsert = document.querySelector('#content')
+
+// instert
+placeToInsert.appendChild(paragraph);
 */
