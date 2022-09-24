@@ -103,6 +103,13 @@ function addText(){
 function insertAfter(newNode, existingNode){
     existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling)
 }
+// create the element
+let paragraph = document.createElement('p');
+paragraph.innerTest = "This is a New Paragraph";
+// locate the place
+let existingNode = document.querySelector("#title");
+// insert the place
+insertAfter(paragraph, existingNode)
 
 /*
 Task 5
